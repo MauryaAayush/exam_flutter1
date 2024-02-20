@@ -38,7 +38,7 @@ class _HomescreenState extends State<Homescreen> {
                     children: [
                       Image.asset('assets/images/logo.png',fit: BoxFit.cover,),
         
-                      SizedBox(width: 250),
+                      const SizedBox(width: 250),
         
                       Row(
                         children: [
