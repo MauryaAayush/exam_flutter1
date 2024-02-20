@@ -46,7 +46,7 @@ class _HomescreenState extends State<Homescreen> {
                             onTap: () {
                               Navigator.of(context).pushNamed('/second');
                             },
-                            child: Text('New Arrivals',style: TextStyle(
+                            child: const Text('New Arrivals',style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
                             ),),
