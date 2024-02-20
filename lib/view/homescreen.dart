@@ -42,30 +42,35 @@ class _HomescreenState extends State<Homescreen> {
         
                       Row(
                         children: [
-                          Text('New Arrivals',style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500,
-                          ),),
+                          InkWell(
+                            onTap: () {
+                              Navigator.of(context).pushNamed('/second');
+                            },
+                            child: Text('New Arrivals',style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600,
+                            ),),
+                          ),
         
                           SizedBox(width: 30,),
         
                           Text('Men',style: TextStyle(
                             fontSize: 18,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                           ),),
         
                           SizedBox(width: 30,),
         
                           Text('women',style: TextStyle(
                             fontSize: 18,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                           ),),
         
                           SizedBox(width: 30,),
         
                           Text('kids',style: TextStyle(
                             fontSize: 18,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                           ),),
                         ],
                       ),
@@ -235,121 +240,155 @@ class _HomescreenState extends State<Homescreen> {
                 children: [
                   Row(
                     children: [
-                      Text('All the new arrivals',style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w700
-                      ),),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).pushNamed('/second');
+                        },
+                        child: Text('All the new arrivals',style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w700
+                        ),),
+                      ),
                     ],
                   ),
                 SizedBox(height: 20,),
-                  Row(
-                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: height*0.3,
-                            width: width*0.2  ,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF5F5F5),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: height*0.4,
+                              width: width*0.2  ,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF5F5F5),
+                              ),
+                              child: Image.asset('assets/images/Products/P1.png'),
                             ),
-                            child: Image.asset('assets/images/R11.png'),
-                          ),
-                          SizedBox(height: 10),
-                          Text('Addidas Beluga',style: TextStyle(
+                            SizedBox(height: 10),
+                            Text('Addidas Beluga',style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 18,
+                            ),),
+                            
+                            Text('35, 000RWF',style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 16
+                            ),),
+                          ],
+                        ),
+                        SizedBox(width: 20,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: height*0.4,
+                              width: width*0.2  ,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF5F5F5),
+                              ),
+                              child: Image.asset('assets/images/R15.png'),
+                            ),
+                            SizedBox(height: 10),
+                            Text('Jordan delta 2',style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.w400,
                               fontSize: 18,
-                          ),),
-        
-                          Text('35, 000RWF',style: TextStyle(
-                            color: Colors.grey,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16
-                          ),),
-                        ],
-                      ),
-                      SizedBox(width: 10,),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: height*0.3,
-                            width: width*0.2,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF5F5F5),
+                            ),),
+                    
+                            Text('35, 000RWF',style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16
+                            ),),
+                          ],
+                        ),
+                        SizedBox(width: 20,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: height*0.4,
+                              width: width*0.2,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF5F5F5),
+                              ),
+                              child: Image.asset('assets/images/R12.png'),
                             ),
-                            child: Image.asset('assets/images/R12.png'),
-                          ),
-                          SizedBox(height: 10),
-                          Text('Nike Zoom',style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 18,
-                          ),),
-
-                          Text('35, 000RWF',style: TextStyle(
-                              color: Colors.grey,
+                            SizedBox(height: 10),
+                            Text('Nike Zoom',style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w400,
-                              fontSize: 16
-                          ),),
-                        ],
-                      ),
-                      SizedBox(width: 10,),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: height*0.3,
-                            width: width*0.2,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF5F5F5),
+                              fontSize: 18,
+                            ),),
+                    
+                            Text('35, 000RWF',style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16
+                            ),),
+                          ],
+                        ),
+                        SizedBox(width: 20,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: height*0.4,
+                              width: width*0.2,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF5F5F5),
+                              ),
+                              child: Image.asset('assets/images/R13.png'),
                             ),
-                            child: Image.asset('assets/images/R13.png'),
-                          ),
-                          SizedBox(height: 10),
-                          Text('Nike Air Jordan XT',style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 18,
-                          ),),
-
-                          Text('35, 000RWF',style: TextStyle(
-                              color: Colors.grey,
+                            SizedBox(height: 10),
+                            Text('Nike Air Jordan XT',style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w400,
-                              fontSize: 16
-                          ),),
-                        ],
-                      ),
-                      SizedBox(width: 10,),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: height*0.3,
-                            width: width*0.2,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF5F5F5),
+                              fontSize: 18,
+                            ),),
+                    
+                            Text('35, 000RWF',style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16
+                            ),),
+                          ],
+                        ),
+                        SizedBox(width: 20,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: height*0.4,
+                              width: width*0.2,
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF5F5F5),
+                              ),
+                              child: Image.asset('assets/images/R14.png'),
                             ),
-                            child: Image.asset('assets/images/R14.png'),
-                          ),
-                          SizedBox(height: 10),
-                          Text('Nike Wobler',style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 18,
-                          ),),
-
-                          Text('35, 000RWF',style: TextStyle(
-                              color: Colors.grey,
+                            SizedBox(height: 10),
+                            Text('Nike Wobler',style: TextStyle(
+                              color: Colors.black,
                               fontWeight: FontWeight.w400,
-                              fontSize: 16
-                          ),),
-                        ],
-                      ),
-                      SizedBox(width: 10,),
-                    ],
+                              fontSize: 18,
+                            ),),
+                    
+                            Text('35, 000RWF',style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16
+                            ),),
+                          ],
+                        ),
+                        SizedBox(width: 20,),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 50,),
                   Row(
@@ -431,7 +470,7 @@ class _HomescreenState extends State<Homescreen> {
                               height: height*0.035,
                               width: width*0.02,
                               decoration: BoxDecoration(
-                                color: Colors.grey,
+                                color: Color(0xFFF5F5F5),
                                 borderRadius: BorderRadius.all(Radius.circular(5)),
                               ),
                               child: Image.asset('assets/images/t.png')
@@ -441,7 +480,7 @@ class _HomescreenState extends State<Homescreen> {
                               height: height*0.035,
                               width: width*0.02,
                               decoration: BoxDecoration(
-                                color: Colors.grey,
+                                color: Color(0xFFF5F5F5),
                                 borderRadius: BorderRadius.all(Radius.circular(5)),
                               ),
                                 child: Image.asset('assets/images/i.png')
@@ -451,7 +490,7 @@ class _HomescreenState extends State<Homescreen> {
                               height: height*0.035,
                               width: width*0.02,
                               decoration: BoxDecoration(
-                                color: Colors.grey,
+                                color: Color(0xFFF5F5F5),
                                 borderRadius: BorderRadius.all(Radius.circular(5)),
                               ),
                                 child: Image.asset('assets/images/f.png')

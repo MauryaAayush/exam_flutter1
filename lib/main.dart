@@ -1,5 +1,7 @@
+import 'package:exam_flutter/view/cartscreen.dart';
 import 'package:exam_flutter/view/homescreen.dart';
 import 'package:exam_flutter/view/productscreen.dart';
+import 'package:exam_flutter/view/selectedscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
         routes: {
       '/' : (context) => const Homescreen(),
       '/second' : (context) =>  const ProductScreen(),
+      '/third' : (context) =>  const SelectedScreen(),
+      '/four' : (context) =>  const CartScreen(),
         },
     );
   }
