@@ -146,7 +146,7 @@ class _CartScreenState extends State<CartScreen> {
                                       ),
                                       child: Row(
 
-                                        children: [
+                                        children: <Widget>[
                                           Container(
                                             height: height*0.1,
                                             width: width*0.05,
@@ -167,7 +167,7 @@ class _CartScreenState extends State<CartScreen> {
                                             ],
                                           ),
 
-                                  SizedBox(width: 150,),
+                                  const SizedBox(width: 150,),
 
                                   Row(
                                     children: [
@@ -181,13 +181,13 @@ class _CartScreenState extends State<CartScreen> {
                                                 });
                                               }
                                           },
-                                          child: Icon(Icons.remove)),
+                                          child: const Icon(Icons.remove)),
 
                                       Container(
                                         alignment: Alignment.center,
                                         height: 40,
                                         width: 40,
-                                        margin: EdgeInsets.all(5),
+                                        margin: const EdgeInsets.all(5),
                                         decoration: BoxDecoration(
                                             borderRadius: BorderRadiusDirectional.circular(8),
                                             border: Border.all(color: Colors.grey),
@@ -201,11 +201,11 @@ class _CartScreenState extends State<CartScreen> {
                                                   });
                                                 },
 
-                                                  child: Icon(Icons.add)),
+                                                  child: const Icon(Icons.add)),
                                     ],
                                   ),
 
-                                          SizedBox(width: 350,),
+                                          const SizedBox(width: 350,),
 
                                           InkWell(
                                             onTap: () {
