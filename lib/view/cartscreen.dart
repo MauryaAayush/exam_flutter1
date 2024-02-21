@@ -137,8 +137,8 @@ class _CartScreenState extends State<CartScreen> {
                                 children: List.generate(cart.length, (index) => Column(
                                   children: [
                                     Container(
-                                      padding: EdgeInsets.all(20),
-                                      margin: EdgeInsets.symmetric(vertical: 20),
+                                      padding: const EdgeInsets.all(20),
+                                      margin: const EdgeInsets.symmetric(vertical: 20),
                                       height: height*0.15,
                                       width: width,
                                       decoration: BoxDecoration(
