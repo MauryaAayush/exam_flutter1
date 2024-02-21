@@ -119,15 +119,15 @@ class _CartScreenState extends State<CartScreen> {
                 children: [
                   Column(
                     children: [
-                      Container(
+                      SizedBox(
                         height: height,
                         width: width*0.7,
                         child:Container(
-                          margin: EdgeInsets.fromLTRB(50, 50, 50, 0),
+                          margin: const EdgeInsets.fromLTRB(50, 50, 50, 0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Your Shopping cart',style: TextStyle(
+                              const Text('Your Shopping cart',style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 24,
                                 fontWeight: FontWeight.w600
