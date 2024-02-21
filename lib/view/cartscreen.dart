@@ -88,7 +88,7 @@ class _CartScreenState extends State<CartScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 320),
+                  const SizedBox(width: 320),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
