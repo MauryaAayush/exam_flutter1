@@ -46,8 +46,8 @@ class _CartScreenState extends State<CartScreen> {
                     'assets/images/logo.png',
                     fit: BoxFit.cover,
                   ),
-                  SizedBox(width: 250),
-                  Row(
+                  const SizedBox(width: 250),
+                  const Row(
                     children: [
                       Text(
                         'New Arrivals',
