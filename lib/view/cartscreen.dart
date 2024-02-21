@@ -89,7 +89,7 @@ class _CartScreenState extends State<CartScreen> {
                     ],
                   ),
                   const SizedBox(width: 320),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Icon(Icons.shopping_cart_outlined),
@@ -106,11 +106,11 @@ class _CartScreenState extends State<CartScreen> {
                 ],
               ),
             ),
-            Divider(
+            const Divider(
               height: 0,
               color: Colors.grey,
             ),
-            Container(
+            SizedBox(
               height: height,
               width: width,
               // color: Colors.yellow,
