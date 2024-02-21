@@ -141,7 +141,7 @@ class _CartScreenState extends State<CartScreen> {
                                       margin: const EdgeInsets.symmetric(vertical: 20),
                                       height: height*0.15,
                                       width: width,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                           color: Color(0xFFF5F5F5)
                                       ),
                                       child: Row(
@@ -150,13 +150,13 @@ class _CartScreenState extends State<CartScreen> {
                                           Container(
                                             height: height*0.1,
                                             width: width*0.05,
-                                            decoration: BoxDecoration(
+                                            decoration: const BoxDecoration(
                                                 color: Colors.white
                                             ),
                                             child: Image.asset(cart[index]['img'],fit: BoxFit.cover,),
                                           ),
 
-                                          SizedBox(width: 50,),
+                                          const SizedBox(width: 50,),
 
                                           Column(
                                             mainAxisAlignment: MainAxisAlignment.start,
