@@ -190,7 +190,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       Text('Jordon'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 10,
                                   ),
                                   Row(
@@ -215,7 +215,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       Text('Adiddas'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 10,
                                   ),
                                   Row(
@@ -240,7 +240,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       Text('Fila'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 10,
                                   ),
                                   Row(
@@ -265,7 +265,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       Text('Gucci'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 10,
                                   ),
                                   Row(
@@ -293,13 +293,13 @@ class _ProductScreenState extends State<ProductScreen> {
                                 ],
                               ),
                             ),
-                            Divider(
+                            const Divider(
                               height: 50,
                               color: Colors.grey,
                             ),
-                            Padding(
+                            const Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 30),
+                                  EdgeInsets.symmetric(horizontal: 30),
                               child: Row(
                                 children: [
                                   Text(
@@ -342,7 +342,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                 ),
                               ],
                             ),
-                            Divider(
+                            const Divider(
                               height: 80,
                               color: Colors.grey,
                             ),
