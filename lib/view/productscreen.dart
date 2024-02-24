@@ -45,8 +45,8 @@ class _ProductScreenState extends State<ProductScreen> {
                   'assets/images/logo.png',
                   fit: BoxFit.cover,
                 ),
-                SizedBox(width: 250),
-                Row(
+                const SizedBox(width: 250),
+                const Row(
                   children: [
                     Text(
                       'New Arrivals',
@@ -87,8 +87,8 @@ class _ProductScreenState extends State<ProductScreen> {
                     ),
                   ],
                 ),
-                SizedBox(width: 320),
-                Row(
+                const SizedBox(width: 320),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Icon(Icons.shopping_cart_outlined),
