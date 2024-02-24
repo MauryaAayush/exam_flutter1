@@ -117,7 +117,7 @@ class _ProductScreenState extends State<ProductScreen> {
                   Row(
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
                         height: height * 3,
                         width: width * 0.25,
                         // color: Colors.blueAccent,
@@ -126,7 +126,7 @@ class _ProductScreenState extends State<ProductScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 30),
+                              padding: const EdgeInsets.symmetric(horizontal: 30),
                               child: Column(
                                 children: [
                                   Row(
