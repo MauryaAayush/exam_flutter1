@@ -503,10 +503,10 @@ class _ProductScreenState extends State<ProductScreen> {
           ),
           child: Image.asset(img),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text(
-          '$name',
-          style: TextStyle(
+          name,
+          style: const TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w400,
             fontSize: 18,
