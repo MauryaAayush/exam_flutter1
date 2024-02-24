@@ -325,7 +325,7 @@ class _CartScreenState extends State<CartScreen> {
                             ),
                           ],
                         ),
-                        Divider(
+                        const Divider(
                           color: Colors.blueAccent,
                           thickness: 10,
                         ),
@@ -333,10 +333,10 @@ class _CartScreenState extends State<CartScreen> {
                           alignment: Alignment.center,
                           height: height * 0.06,
                           width: width * 0.1,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.red,
                           ),
-                          child: Text(
+                          child: const Text(
                             'Proceed to checkout',
                             style: TextStyle(color: Colors.white),
                           ),
