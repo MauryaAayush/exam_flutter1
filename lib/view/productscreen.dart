@@ -140,7 +140,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 30,
                                   ),
                                   Row(
@@ -165,7 +165,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                       Text('Nike'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 10,
                                   ),
                                   Row(
