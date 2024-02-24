@@ -26,8 +26,6 @@ class _ProductScreenState extends State<ProductScreen> {
       int price = product['price'];
       String brand = product['brand'];
 
-      bool priceFilter = price >= values.start && price <= values.end;
-      bool brandFilter =
           selectedBrands.isEmpty || selectedBrands.contains(brand);
 
       return price >= values.start && price <= values.end;
@@ -497,10 +495,10 @@ class _ProductScreenState extends State<ProductScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: EdgeInsets.fromLTRB(0, 20, 30, 30),
+          margin: const EdgeInsets.fromLTRB(0, 20, 30, 30),
           height: height * 0.4,
           width: width * 0.2,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0xFFF5F5F5),
           ),
           child: Image.asset(img),
