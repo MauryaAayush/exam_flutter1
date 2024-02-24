@@ -309,17 +309,17 @@ class _CartScreenState extends State<CartScreen> {
                           width: 380,
                           color: Colors.black,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 262,
                             ),
                             Text(
                               '${sum()} RWF',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black,
                               ),
                             ),
