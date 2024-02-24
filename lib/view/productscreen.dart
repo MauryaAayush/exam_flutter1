@@ -348,17 +348,17 @@ class _ProductScreenState extends State<ProductScreen> {
                             ),
 
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 30),
-                                child: Text('Sized',
+                              padding: const EdgeInsets.symmetric(horizontal: 30),
+                                child: const Text('Sized',
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600
                                 ),)),
 
-                            SizedBox(height: 20,),
+                            const SizedBox(height: 20,),
 
                             Padding(
-                              padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                              padding: const EdgeInsets.fromLTRB(30, 0, 0, 0),
                               child: Column(
                                 children: [
                                   Row(
