@@ -384,7 +384,7 @@ class _ProductScreenState extends State<ProductScreen> {
                       Expanded(
                         child: SingleChildScrollView(
                           child: Container(
-                            margin: EdgeInsets.fromLTRB(50, 0, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(50, 0, 0, 0),
                             height: height * 3,
                             width: width * 0.7,
                             // color: Colors.yellow,
