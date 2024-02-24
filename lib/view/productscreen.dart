@@ -514,7 +514,7 @@ class _ProductScreenState extends State<ProductScreen> {
         ),
         Text(
           ' $price RWF',
-          style: TextStyle(
+          style: const TextStyle(
               color: Colors.grey, fontWeight: FontWeight.w400, fontSize: 16),
         ),
       ],
