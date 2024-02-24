@@ -273,16 +273,16 @@ class _CartScreenState extends State<CartScreen> {
                             ),
                             Text(
                               '${sum()} RWF',
-                              style: TextStyle(
+                              style: const TextStyle(
                                 color: Colors.black,
                               ),
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Row(
+                        const Row(
                           children: [
                             Text(
                               'Delivery fee',
