@@ -226,7 +226,7 @@ class _CartScreenState extends State<CartScreen> {
                                                         cart.removeAt(index);
                                                       });
                                                     },
-                                                    child: Icon(
+                                                    child: const Icon(
                                                       Icons.delete,
                                                       color: Colors.black,
                                                       size: 30,
