@@ -246,104 +246,102 @@ class _CartScreenState extends State<CartScreen> {
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(50, 50, 20, 0),
-                    child: Container(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Order Summary',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 16,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Order Summary',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 50,
+                        ),
+                        Row(
+                          children: [
+                            const Text(
+                              'Sub total',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 50,
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'Sub total',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 200,
-                              ),
-                              Text(
-                                '${sum()} RWF',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                'Delivery fee',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 200,
-                              ),
-                              Text(
-                                '0RWF',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Container(
-                            height: 2,
-                            width: 380,
-                            color: Colors.black,
-                          ),
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Row(
-                            children: [
-                              SizedBox(
-                                width: 262,
-                              ),
-                              Text(
-                                '${sum()} RWF',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Divider(
-                            color: Colors.blueAccent,
-                            thickness: 10,
-                          ),
-                          Container(
-                            alignment: Alignment.center,
-                            height: height * 0.06,
-                            width: width * 0.1,
-                            decoration: BoxDecoration(
-                              color: Colors.red,
+                            const SizedBox(
+                              width: 200,
                             ),
-                            child: Text(
-                              'Proceed to checkout',
-                              style: TextStyle(color: Colors.white),
+                            Text(
+                              '${sum()} RWF',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
                             ),
-                          )
-                        ],
-                      ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              'Delivery fee',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 200,
+                            ),
+                            Text(
+                              '0RWF',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          height: 2,
+                          width: 380,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          children: [
+                            SizedBox(
+                              width: 262,
+                            ),
+                            Text(
+                              '${sum()} RWF',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Divider(
+                          color: Colors.blueAccent,
+                          thickness: 10,
+                        ),
+                        Container(
+                          alignment: Alignment.center,
+                          height: height * 0.06,
+                          width: width * 0.1,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                          child: Text(
+                            'Proceed to checkout',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        )
+                      ],
                     ),
                   )
                 ],
