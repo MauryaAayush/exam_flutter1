@@ -129,7 +129,7 @@ class _ProductScreenState extends State<ProductScreen> {
                               padding: const EdgeInsets.symmetric(horizontal: 30),
                               child: Column(
                                 children: [
-                                  Row(
+                                  const Row(
                                     children: [
                                       Text(
                                         'Brand',
