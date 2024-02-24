@@ -105,7 +105,7 @@ class _ProductScreenState extends State<ProductScreen> {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Colors.grey,
           ),
           Padding(
