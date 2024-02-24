@@ -392,7 +392,7 @@ class _ProductScreenState extends State<ProductScreen> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
+                                const Text(
                                   'Only Filtered',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w700,
@@ -421,7 +421,7 @@ class _ProductScreenState extends State<ProductScreen> {
                                     ),
                                   ),
                                 ),
-                                Text(
+                                const Text(
                                   'The new arrivals',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w700,
