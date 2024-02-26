@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Exam',
 
-    initialRoute: '/',
+    initialRoute: '/four',
         routes: {
       '/' : (context) => const Homescreen(),
       '/second' : (context) =>  const ProductScreen(),

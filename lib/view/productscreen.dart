@@ -526,7 +526,7 @@ class _ProductScreenState extends State<ProductScreen> {
       alignment: Alignment.center,
       height: 40,
       width: 40,
-      margin: EdgeInsets.all(5),
+      margin: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           borderRadius: BorderRadiusDirectional.circular(8),
           border: Border.all(color: Colors.grey),
